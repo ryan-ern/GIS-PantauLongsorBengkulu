@@ -8,14 +8,8 @@
         echo "Pantau Longsor Bengkulu";
       } elseif ($title == "Data") {
         echo "Halaman Data";
-      } elseif ($title == "FAQ") {
-        echo "Halaman FAQ";
       } elseif ($title == "Info-Longsor") {
         echo "Halaman Info Longsor";
-      } elseif ($title == "Kontak") {
-        echo "Halaman Kontak";
-      } elseif ($title == "Media") {
-        echo "Halaman Media";
       } elseif ($title == "Peta") {
         echo "Halaman Peta";
       } else {
@@ -49,7 +43,7 @@
         <div class="media d-flex align-items-center">
           <div class="media-body">
             <h4 class="m-0">
-              <a href="page/login.php" class="nav-link text-dark">PANTAU LONGSOR BENGKULU</a>
+              PANTAU LONGSOR BENGKULU
             </h4>
           </div>
         </div>
@@ -85,7 +79,7 @@
           </a>
           <hr />
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a href="?page=Media" class="nav-link text-dark">
             <i class="fa fa-picture-o mr-3 text-success fa-fw"></i>
             Media
@@ -105,7 +99,7 @@
             Kontak
           </a>
           <hr />
-        </li>
+        </li> -->
       </ul>
     </div>
     <!-- End vertical navbar -->
@@ -116,11 +110,21 @@
       <button
         id="sidebarCollapse"
         type="button"
-        class="btn btn-light bg-white rounded-pill shadow-sm px-4 mb-4"
+        class="btn btn-light bg-white shadow-sm px-4 mb-4"
       >
         <i class="bi bi-menu-button-wide-fill text-success fa-fw"></i>
         <small class="text-uppercase font-weight-bold">Menu</small>
       </button>
+      <a href="page/login.php">
+      <button
+        type="button"
+        class="btn btn-light bg-white shadow-sm px-4 mb-4 float-right"
+      >
+        <i class="bi bi-person-circle text-success fa-fw"></i>
+        
+        <small class="text-uppercase font-weight-bold">Login</small>
+      </button>
+      </a>
       <div class="col-lg-12">
         <?php
         $page = @$_GET["page"];
@@ -138,15 +142,6 @@
             case "Info-Longsor":
               include "page/info.php";
               break;
-            case "Media":
-              include "page/media.php";
-              break;
-            case "FAQ":
-              include "page/faq.php";
-              break;
-            case "Kontak":
-              include "page/kontak.php";
-              break;
             default:
               include "page/404.php";
               break;
@@ -156,88 +151,7 @@
         }
         ?>
       </div>
-      <!-- Demo content -->
-      <!-- <h2 class="display-4 text-white">Bootstrap vertical nav</h2>
-      <p class="lead text-white mb-0">
-        Build a fixed sidebar using Bootstrap 4 vertical navigation and media
-        objects.
-      </p>
-      <div class="separator"></div>
-      <div class="row text-white">
-        <div class="col-lg-7">
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor.
-          </p>
-        </div>
-        <div class="col-lg-5">
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <p class="lead">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor.
-          </p>
-        </div>
-      </div> -->
     </div>
-    <!-- End demo content -->
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
