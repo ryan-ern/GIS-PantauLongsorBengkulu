@@ -1,3 +1,7 @@
+<?php
+ include("../connection/validate.php");
+ include ("../connection/koneksi.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,20 +61,20 @@
 <div class="container login-container">
             <div class="row">
                 <div class="col-md-15 login-form-2">
-                    <h3>Login Sebagai Admin</h3>
-                    <form>
+                    <h3>Login Admin</h3>
+                    <form method="POST" action="../connection/validate.php">
                         <div class="form-group">
-                            <input type="email" class="form-control" placeholder="Your Email *" value="" required/>
+                            <input type="text" class="form-control" placeholder="Your Username *" value="" name="username" required/>
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control" placeholder="Your Password *" value="" required/>
+                            <input type="password" class="form-control" placeholder="Your Password *" value="" name="password" required/>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btnSubmit" value="Login" />
+                            <input type="submit" class="btnSubmit" value="Login" name="login"/>
                         </div>
                         <div class="form-group">
 
-                            <a href="../index.php" class="ForgetPwd" value="Login">Kembali Ke Beranda</a>
+                            <a href="../index.php" class="ForgetPwd" value="back">Kembali Ke Beranda</a>
                         </div>
                     </form>
                 </div>

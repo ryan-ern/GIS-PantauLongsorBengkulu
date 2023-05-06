@@ -179,7 +179,7 @@
             Upaya Penanganan di Dua Kecamatan Terdampak
           </h3>
 
-          <a href="#" class="btn">Baca Berita</a>
+          <a href="https://www.bnpb.go.id/berita/banjir-dan-tanah-longsor-di-bengkulu-utara-tim-gabungan-lakukan-upaya-penanganan-di-dua-kecamatan-terdampak" class="btn" target="_blank">Baca Berita</a>
         </div>
       </div>
 
@@ -196,7 +196,7 @@
             Hidup Terisolir
           </h3>
 
-          <a href="#" class="btn">Baca Berita</a>
+          <a href="https://news.okezone.com/amp/2019/04/30/340/2049723/derita-korban-longsor-bengkulu-fasum-rusak-kebun-tertimbun-hingga-hidup-terisolir" class="btn" target="_blank">Baca Berita</a>
         </div>
       </div>
 
@@ -212,7 +212,7 @@
             Sempat Terputus Longsor, Akses Lintas Bengkulu Sudah Bisa Dilalui
           </h3>
 
-          <a href="#" class="btn">Baca Berita</a>
+          <a href="https://news.detik.com/berita/d-5920692/sempat-terputus-longsor-akses-lintas-bengkulu-sudah-bisa-dilalui/amp" class="btn" target="_blank">Baca Berita</a>
         </div>
       </div>
     </div>
@@ -228,8 +228,8 @@
       </div>
     </div>
 
-    <h2 style="margin: 30px">Dapatkan Informasi Lengkap Lainnya</h2>
       <div class="container">
+        <h2 style="margin: 30px;">Dapatkan Informasi Lengkap Lainnya</h2>
         <div class="row">
           <div class="col-sm">
             <a href="?page=Peta" class="btn">

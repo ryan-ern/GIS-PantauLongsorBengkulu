@@ -1,3 +1,7 @@
+<?php
+  include ("connection/validate.php");
+  include ("connection/koneksi.php");
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -79,27 +83,19 @@
           </a>
           <hr />
         </li>
-        <!-- <li class="nav-item">
-          <a href="?page=Media" class="nav-link text-dark">
-            <i class="fa fa-picture-o mr-3 text-success fa-fw"></i>
-            Media
+        <?php
+        if (isset($_SESSION['id']) && $_SESSION['id'] == '1') {
+        ?>
+        <li class="nav-item">
+          <a href="?page=Data" class="nav-link text-dark">
+            <i class="bi bi-table mr-3 text-success fa-fw"></i>
+            Aksi Data
           </a>
           <hr />
         </li>
-        <li class="nav-item">
-          <a href="?page=FAQ" class="nav-link text-dark">
-            <i class="bi bi-question-square-fill mr-3 text-success fa-fw"></i>
-            FAQ
-          </a>
-          <hr />
-        </li>
-        <li class="nav-item">
-          <a href="?page=Kontak" class="nav-link text-dark">
-            <i class="bi bi-person-lines-fill mr-3 text-success fa-fw"></i>
-            Kontak
-          </a>
-          <hr />
-        </li> -->
+        <?php
+        }
+        ?>
       </ul>
     </div>
     <!-- End vertical navbar -->
@@ -115,6 +111,22 @@
         <i class="bi bi-menu-button-wide-fill text-success fa-fw"></i>
         <small class="text-uppercase font-weight-bold">Menu</small>
       </button>
+      <?php
+        if (isset($_SESSION['id']) && $_SESSION['id'] == '1') {
+        ?>
+      <a href="page/logout.php">
+      <button
+        type="button"
+        class="btn btn-light bg-white shadow-sm px-4 mb-4 float-right"
+      >
+        <i class="bi bi-person-circle text-success fa-fw"></i>
+        
+        <small class="text-uppercase font-weight-bold">Logout</small>
+      </button>
+      </a>
+      <?php
+        }else{
+      ?>
       <a href="page/login.php">
       <button
         type="button"
@@ -125,6 +137,9 @@
         <small class="text-uppercase font-weight-bold">Login</small>
       </button>
       </a>
+      <?php
+    }
+    ?>
       <div class="col-lg-12">
         <?php
         $page = @$_GET["page"];

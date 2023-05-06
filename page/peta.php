@@ -59,7 +59,7 @@
       ]);
       var hash = new L.Hash(map);
       map.attributionControl.setPrefix(
-        '<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>'
+        '<a href="https://github.com/tomchadwin/qgis2web" target="_blank">Pantau Longsor Bengkulu</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>'
       );
       var autolinker = new Autolinker({
         truncate: { length: 30, location: "smart" },
