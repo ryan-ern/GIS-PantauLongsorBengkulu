@@ -34,7 +34,7 @@ var json_Data_Longsor_11 = {
     {
       type: "Feature",
       properties: {
-        id: "3",
+        id: "2",
         Kabupaten: "Lebong",
         Kecamatan: "-",
         Tanggal: "26-04-2019",
