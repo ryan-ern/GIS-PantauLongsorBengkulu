@@ -31,27 +31,21 @@
     ?>
             <input type="hidden" name="id" value="<?= $data['id'] ?>">
             <div class="form-group">
-                <label for="kabupaten">Kabupaten:</label>
-                <input type="text" class="form-control" id="kabupaten" name="kabupaten"
-                    value="<?= $data['kabupaten'] ?>" required>
+                <label for="Kabupaten">Kabupaten:</label>
+                <input type="text" class="form-control" id="Kabupaten" name="Kabupaten"
+                    value="<?= $data['Kabupaten'] ?>" required>
             </div>
 
             <div class="form-group">
-                <label for="kecamatan">Kecamatan:</label>
-                <input type="text" class="form-control" id="kecamatan" name="kecamatan"
-                    value="<?= $data['kecamatan'] ?>" required>
-            </div>
-
-            <div class="form-group">
-                <label for="tanggal">Tanggal:</label>
-                <input type="date" class="form-control" id="tanggal" name="tanggal" value="<?= $data['tanggal'] ?>"
+                <label for="Tanggal">Tanggal:</label>
+                <input type="date" class="form-control" id="Tanggal" name="Tanggal" value="<?= $data['Tanggal'] ?>"
                     required>
             </div>
 
             <div class="form-group">
-                <label for="korban_jiwa">Total Korban Jiwa:</label>
-                <input type="number" class="form-control" id="korban_jiwa" name="korban" value="<?= $data['korban'] ?>"
-                    required>
+                <label for="Keterangan">Keterangan:</label>
+                <input type="text" class="form-control" id="Keterangan" name="Keterangan"
+                    value="<?= $data['Keterangan'] ?>" required>
             </div>
 
             <div class="form-group">

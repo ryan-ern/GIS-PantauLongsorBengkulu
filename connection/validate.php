@@ -34,14 +34,14 @@ if (isset($_POST['login'])) {
     }
 }
 if (isset($_POST['tambah'])) {
-    $kbptn = $_POST['kabupaten'];
-    $kcmtn = $_POST['kecamatan'];
-    $tgl = $_POST['tanggal'];
-    $korban = $_POST['korban'];
+    $kbptn = $_POST['Kabupaten'];
+    
+    $tgl = $_POST['Tanggal'];
+    $Keterangan = $_POST['Keterangan'];
     $lat = $_POST['latitude'];
     $long = $_POST['longitude'];
 
-    $query = mysqli_query($koneksi, "INSERT INTO tb_data (kabupaten, kecamatan, tanggal, korban, latitude, longitude) VALUES ('$kbptn', '$kcmtn', '$tgl', '$korban', '$lat', '$long')");
+    $query = mysqli_query($koneksi, "INSERT INTO tb_data (Kabupaten, Tanggal, Keterangan, latitude, longitude) VALUES ('$kbptn', '$tgl', '$Keterangan', '$lat', '$long')");
      if ($query) {
     mysqli_close($koneksi);
     echo "<script>alert('Berhasil Tambah Data'); window.location.href = '?page=Data';</script>";
@@ -60,14 +60,14 @@ if (isset($_POST['hapus'])) {
 
 if (isset($_POST['edit'])) {
   $id = $_POST['id'];
-  $kbptn = $_POST['kabupaten'];
-  $kcmtn = $_POST['kecamatan'];
-  $tgl = $_POST['tanggal'];
-  $korban = $_POST['korban'];
+  $kbptn = $_POST['Kabupaten'];
+  
+  $tgl = $_POST['Tanggal'];
+  $Keterangan = $_POST['Keterangan'];
   $lat = $_POST['latitude'];
   $long = $_POST['longitude'];
 
-  $query = "UPDATE tb_data SET kabupaten='$kbptn', kecamatan='$kcmtn', tanggal='$tgl', korban='$korban', latitude='$lat', longitude='$long' WHERE id='$id'";
+  $query = "UPDATE tb_data SET Kabupaten='$kbptn', Tanggal='$tgl', Keterangan='$Keterangan', latitude='$lat', longitude='$long' WHERE id='$id'";
   $result = mysqli_query($koneksi, $query);
 
   if ($result) {

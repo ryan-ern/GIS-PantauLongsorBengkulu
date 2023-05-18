@@ -20,23 +20,18 @@
         <h3>TAMBAH DATA KEJADIAN LONGSOR</h3>
         <form action="?page=Tambah-Data" method="POST">
             <div class="form-group">
-                <label for="kabupaten">Kabupaten:</label>
-                <input type="text" class="form-control" id="kabupaten" name="kabupaten" required>
+                <label for="Kabupaten">Kabupaten:</label>
+                <input type="text" class="form-control" id="Kabupaten" name="Kabupaten" required>
             </div>
 
             <div class="form-group">
-                <label for="kecamatan">Kecamatan:</label>
-                <input type="text" class="form-control" id="kecamatan" name="kecamatan" required>
+                <label for="Tanggal">Tanggal:</label>
+                <input type="date" class="form-control" id="Tanggal" name="Tanggal" required>
             </div>
 
             <div class="form-group">
-                <label for="tanggal">Tanggal:</label>
-                <input type="date" class="form-control" id="tanggal" name="tanggal" required>
-            </div>
-
-            <div class="form-group">
-                <label for="korban_jiwa">Total Korban Jiwa:</label>
-                <input type="number" class="form-control" id="korban_jiwa" name="korban" required>
+                <label for="Keterangan">Keterangan</label>
+                <input type="text" class="form-control" id="Keterangan" name="Keterangan" required>
             </div>
 
             <div class="form-group">

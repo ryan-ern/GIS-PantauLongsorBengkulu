@@ -32,10 +32,6 @@
                 <thead>
                     <tr bgcolor="#00FF7F" align="center">
                         <th>No</th>
-                        <th>Kabupaten</th>
-                        <th>Kecamatan</th>
-                        <th>Tanggal</th>
-                        <th>Total Korban Jiwa</th>
                         <?php
            if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
             ?>
@@ -43,6 +39,9 @@
                         <?php
             }
             ?>
+                        <th>Kabupaten</th>
+                        <th>Tanggal</th>
+                        <th>Keterangan</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -54,10 +53,6 @@
     ?>
                     <tr bgcolor="white" align="center">
                         <td><?= $no++ ?></td>
-                        <td><?= $row['kabupaten'] ?></td>
-                        <td><?= $row['kecamatan'] ?></td>
-                        <td><?= $row['tanggal'] ?></td>
-                        <td><?= $row['korban'] ?></td>
                         <?php
             if (isset($_SESSION['username']) && $_SESSION['username'] == 'admin') {
             ?>
@@ -84,6 +79,10 @@
                         <?php
             }
             ?>
+                        <td><?= $row['Kabupaten'] ?></td>
+                        <td><?= $row['Tanggal'] ?></td>
+                        <td><?= $row['Keterangan'] ?></td>
+
                     </tr>
                     <?php
     endwhile;

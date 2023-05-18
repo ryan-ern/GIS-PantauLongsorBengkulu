@@ -19,7 +19,9 @@
         echo "Halaman Peta";
       } elseif ($title == "Tambah-Data") {
         echo "Halaman Tambah Data";
-      } else {
+      } elseif ($title == "Edit-Info") {
+        echo "Halaman Edit Informasi";
+      }  else {
         echo "404 Not Found";
       }
     } else {
@@ -139,7 +141,7 @@
               include "page/beranda.php";
               break;
             case "Peta":
-              include "page/peta.php";
+              include "page/peta.html";
               break;
             case "Data":
               include "page/data.php";
